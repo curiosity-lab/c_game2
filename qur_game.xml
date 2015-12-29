@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<p1>
+	<q1>אני מחפש באופן אקטיבי מידע רב ככל שאני יכול במצבים חדשים</q1>
+		<answer name="ans1">  מתנגד בהחלט   </answer>
+		<answer name="ans2">  מתנגד   </answer>
+		<answer name="ans3">  לא בטוח   </answer>
+		<answer name="ans4">  מסכים   </answer>
+		<answer name="ans5">  מסכים בהחלט   </answer>
+	<q1>אני מסוג האנשים שבאמת נהנה מחוסר הוודאות של חיי היומיום</q1>
+		<answer name="ans1">  מתנגד בהחלט   </answer>
+		<answer name="ans2">  מתנגד   </answer>
+		<answer name="ans3">  לא בטוח   </answer>
+		<answer name="ans4">  מסכים   </answer>
+		<answer name="ans5">  מסכים בהחלט   </answer>
+</p1>

@@ -1,11 +1,19 @@
-import xml.etree.ElementTree as ET
+import kivy
+from kivy.app import App
+from kivy.uix.gridlayout import GridLayout
+from kivy.uix.label import Label
+from kivy.uix.textinput import TextInput
+kivy.require('1.9.0')
+
+from kivy.app import App
+from kivy.uix.label import Label
 
 
-curiosity_q = ET.parse('curiosity_q.xml')
-root_curiosity_q = curiosity_q.getroot()
-ET.fromstring(root_curiosity_q)
-print root_curiosity_q.tag
 
-#for child in root_curiosity_q:
- #   child = ET.fromstring(child.tag)
-  #  print child
+
+class Cl1App(object):
+    pass
+
+
+if __name__ == '__main__':
+    Cl1App().run()

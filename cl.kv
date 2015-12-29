@@ -1,0 +1,94 @@
+InputForm:
+<InputForm>:
+    name: student_name
+    clas: clas
+    grade: grade
+	orientation: "vertical"
+	BoxLayout:
+	    size_hint_y:0.2
+	BoxLayout:
+	    size_hint_y:0.3
+	    BoxLayout:
+	        orientation: "vertical"
+            Label:
+                text: 'Student Name'
+            Label:
+                text: 'Class'
+            Label:
+                text: 'Grade'
+        BoxLayout:
+            orientation: "vertical"
+            TextInput:
+                id: student_name
+            Spinner:
+                text: "Math"
+                values:['Math','Dook','Sup']
+                id: clas
+            TextInput:
+                id: grade
+        BoxLayout:
+	        size_hint_x:0.2
+	BoxLayout:
+	    size_hint_y:0.4
+	BoxLayout:
+	    size_hint_y:0.1
+	    BoxLayout:
+	        size_hint_x:0.3
+	    Button:
+	        text:'Fill DB'
+	        on_press: root.insert()
+	    BoxLayout:
+	        size_hint_x:0.15
+        Button:
+            text:'Show Records'
+            on_press: root.displayRecords()
+        BoxLayout:
+	        size_hint_x:0.15
+        Button:
+            text:'Finish'
+            on_press: root.out()
+        BoxLayout:
+	        size_hint_x:0.3
+	BoxLayout:
+	    size_hint_y:0.1
+
+
+<ShowRecords>:
+    res: results
+	orientation: "vertical"
+    Label:
+        id: results
+        size_hint_y:15
+    BoxLayout:
+        BoxLayout:
+            size_hint_x:0.5
+        Button:
+            text: "Usr Avg"
+            on_press: root.avg_user()
+        BoxLayout:
+            size_hint_x:0.2
+        Button:
+            text: "Count Users"
+            on_press: root.count_users()
+        BoxLayout:
+            size_hint_x:0.2
+        Button:
+            text: "Genius!"
+            on_press: root.max_grade_math()
+        BoxLayout:
+            size_hint_x:0.2
+        Button:
+            text: "End"
+            on_press: root.out()
+        BoxLayout:
+            size_hint_x:0.5
+    BoxLayout:
+        size_hint_x:0.1
+    BoxLayout:
+        BoxLayout:
+        Button:
+            text: "Beck To Input Data"
+            on_press: root.display_imput_data()
+        BoxLayout:
+    BoxLayout:
+        size_hint_x:0.1
